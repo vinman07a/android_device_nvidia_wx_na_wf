@@ -1,8 +1,9 @@
+#Place this file in vendor/aicp/products
 # Inherit device configuration for wx_na_wf.
 $(call inherit-product, device/nvidia/wx_na_wf/full_wx_na_wf.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
+# Inherit some common Tablet stuff.
+$(call inherit-product, vendor/aicp/config/common_tablet.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=wx_na_wf \
